@@ -8,6 +8,14 @@ A fun interactive quiz for Zelda fans
 * CSS
 * JavaScript
 
+## Pages
+4 HTML
+3 JavaScript
+3 CSS
+
+
+
+
 ## Website
 https://jconeff.github.io/quiz/
 

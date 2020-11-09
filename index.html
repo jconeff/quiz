@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Zelda Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+  <body>
+      <div id="container">
+      <div id="Start">Start Quiz!</div> 
+      <div id="quiz" style="display: none;">
+      <div id="question"></div>
+      <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+          <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+          <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+      </div>
+      <div id="timer">
+          <div id="counter"></div>
+          <div id="btimeGauge"></div>
+          <div id="timeGauge"></div>
+    </div>
+
+      <div id="progress"> </div>
+      </div>
+
+      <div id="scoreContainer" style="display: none;">
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+  </html>

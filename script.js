@@ -32,29 +32,39 @@ let questions =[
             choice3: 'Blue Tunic',
             answer: 3,
             },
+
+            {
+                question:'In The Legend of Zelda game, an old man gives Link a sword. In Legend of Zelda Breath of the Wild, an old man gives Link what?',
+                choice1: 'Baked Apples',
+                choice2: 'Bow & Arrow',
+                choice3: 'Sheild',
+                answer: 1,
+                },
+
+            
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 3
+const MAX_QUESTIONS = 4
 
 startGame =()=>{
     questionCounter= 0
     score=0
-    avaliableQuestions =[...questions]
+    availableQuestions =[...questions]
     getNewQuestion()
 }
 
 getNewQuestion =() =>{
-    if(avaliableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score)
 
         return window.location.assign('/end.html')
     }
-    questionCounter ++
+    questionCounter++
     progressText.innerText ='Question ${questionCounter} of ${MAX_QUESTIONS}'
     progressBarFull.style.width= '${(questionCounter/MAX_QUESTIONS) * 100}%'
 
-    const questionsIndex = Math.floor(Math.random()* avaliableQuestions.length)
+    const questionsIndex = Math.floor(Math.random()* availableQuestions.length)
     currentQuestion = availableQuestions [questionsIndex]
     question.innerText = currentQuestion.question
 
@@ -63,7 +73,7 @@ getNewQuestion =() =>{
         choice.innerText = currentQuestion['choice' + number]
     })
 
-    avaliableQuestions.splice(questionsIndex,1)
+    availableQuestions.splice(questionsIndex,1)
 
     acceptingAnswers = true
     }

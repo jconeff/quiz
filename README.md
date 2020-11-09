@@ -1,4 +1,4 @@
-# Legen of Zelda Quiz
+# Legend of Zelda Quiz
 
 ## Purpose
 A fun interactive quiz for Zelda fans

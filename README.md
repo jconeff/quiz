@@ -9,9 +9,9 @@ A fun interactive quiz for Zelda fans
 * JavaScript
 
 ## Pages
-4 HTML
-3 JavaScript
-3 CSS
+* 4 HTML
+* 3 JavaScript
+* 3 CSS
 
 
 
